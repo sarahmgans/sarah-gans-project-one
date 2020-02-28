@@ -1,0 +1,366 @@
+html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,html [type=button],[type=reset],[type=submit]{-webkit-appearance:button}button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details,menu{display:block}summary{display:list-item}canvas{display:inline-block}template{display:none}[hidden]{display:none}
+
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: ''; clear: both; height: 0; }
+
+html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
+
+*, *:before, *:after {box-sizing: inherit}
+
+.sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
+
+/* General Styling */
+
+ html {
+    font-size: 62.5%;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    line-height: 0;
+}
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 1280px;
+    width: 80%;
+}
+
+body {
+    font-family: 'Catamaran';
+    color: black;
+    font-weight: regular;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Header starts here */
+
+header {
+    background-image: url(./assets/image-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0% 99%;
+    height: 100vh;
+    min-height: 600px;
+    padding: 20px 0 0 0;
+    position: relative;
+}
+
+.h1-and-icons {
+    position: relative;
+}
+
+nav {
+    text-align: center;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    font-family: 'Catamaran';
+    font-size: 20px;
+    line-height: 29px;
+    padding: 0px 20px;
+}
+
+nav li a {
+    text-decoration: none;
+    color: white;
+}
+
+.hamburger-menu {
+    position: relative;
+}
+
+.fa.fa-bars {
+    position: absolute;
+    right: 0px;
+    font-size: 30px;
+    color: white;
+    visibility: hidden;
+}
+
+h1 {
+    font-family: 'Pacifico';
+    font-size: 130px;
+    color: #F2A11C;
+    text-align: center;
+    margin-top: 235px;
+    
+}
+
+.icons i {
+    color: #F2A11C;
+    font-size: 30px;
+    display: block;
+    padding: 8px 0px;
+}
+
+.icons {
+    position: absolute;
+    right: 0;
+    top: -42px;
+}
+
+/* Header ends here */
+
+/* Main starts here */
+
+h2 {
+    font-family: 'Pacifico';
+    font-size: 42px;
+    color: black;
+}
+
+p {
+    font-family: 'Catamaran';
+    font-size: 20px;
+    line-height: 29px;
+}
+
+.about-text,
+.mission-text {
+    width: 30%;
+    float: left;
+    margin-left: 10%;
+    margin-top: 5%;
+}
+
+.about-background {
+    background-image: url(./assets/image-2.jpg);
+    width: 50%;
+    float: right;
+    height: 70vh;
+    background-position: 57% 10%;
+}
+
+.mission-background {
+    background-image: url(./assets/image-7.jpg);
+    width: 50%;
+    float: left;
+    height: 70vh;
+    background-position: 0% 80%;
+}
+
+.mobile-mission-background {
+    display: hidden;
+    background-image: url(./assets/image-7.jpg);
+}
+
+.button {
+    font-family: 'Catamaran';
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 29px;
+    background: black;
+    width: 150px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+}
+
+.button a {
+    text-decoration: none;
+    color: #F2A11C;
+}
+
+.meet-alissa {
+    padding-top: 90px;
+    padding-bottom: 90px;
+    background-color: #F4F4F4;
+}
+
+.alissa-text h2 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.alissa-image {
+    width: 33.33%;
+    float: left;
+}
+
+.alissa-text {
+    width: calc(66.66% - 4%);
+    float: left;
+    margin-left: 4%;
+}
+
+.icons-bottom {
+    background-image: url(./assets/image-5.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+    color: white;
+    text-align: center;
+}
+
+.fas.fa-bicycle {
+    font-size: 44px;
+}
+
+.fas.fa-users {
+    font-size: 40px;
+}
+
+.fas.fa-phone {
+    font-size: 37px;
+}
+
+.icons-bottom p {
+    color: #F2A11C;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.icons-bottom .products,
+.icons-bottom .community,
+.icons-bottom .reach-out {
+    display: inline-block;
+    margin-top: 200px;
+    padding: 0 25px;
+}
+
+.instagram h2 {
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 70px;
+}
+
+.insta div {
+    float: left;
+}
+
+.insta .missing {
+    width: calc(33.33% - 20px);
+    margin-right: 20px;
+}
+
+.insta .image-3 {
+    width: calc(33.33% - 20px);
+    margin: 0px 10px;
+}
+
+.insta .image-4 {
+    width: calc(33.33% - 20px);
+    margin-left: 20px;
+} 
+
+.insta.clearfix {
+    padding-bottom: 125px;
+}
+
+.footer {
+    background-color: #1F2022;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.bottom-nav {
+    padding-bottom: 45px;
+}
+
+.bottom-nav li a {
+    text-transform: uppercase;
+}
+
+h3 {
+    color: #F2A11C;
+    font-family: 'Pacifico';
+    font-size: 25px;
+}
+
+.address p,
+.form p {
+    color: white;
+    margin-bottom: 5px;
+    line-height: 8px;
+}
+
+.search-bar {
+    margin-top: 20px;
+}
+
+input {
+    margin: 0;
+    transition: 0.3s;
+}
+
+input[type='text'] {
+    font-family: 'Catamaran';
+    margin-right: -4.2px;
+    padding: 12px 30px;
+    background: white;
+    color: black;
+    border: none;
+    width: 60%;
+    font-size: 15px;
+}
+
+input[type="text"]:hover,
+input[type="text"]:focus {
+    background-color:white;
+    color:  #0f2128;
+}
+
+input[type="submit"] {
+    font-family: 'Catamaran';
+    background-color: #F2A11C;
+    color: #0f2128;
+    border: none;
+    text-transform: uppercase;
+    font-size: 15px;
+    padding: 12px 30px;
+}
+
+input[type="submit"]:hover,
+input[type="submit"]:focus {
+    color: white;
+}
+
+.address {
+    width: 50%;
+    float: left;
+}
+
+.form {
+    width: 50%;
+    float: left;
+}
+
+/* Main ends here */
+
+/* Footer starts here */
+
+.copyright {
+    background-color: black;
+    clear: both;
+}
+
+footer p {
+    color: #F4F4F4;
+    text-align: center;
+    margin: 0;
+    font-size: 15px;
+    padding: 7px;
+}
+
+/* Footer ends here */
+
+/* Media Queries start here */
+
+@media (max-width: ){
+
+
+
+}
+
+
+
+
+
