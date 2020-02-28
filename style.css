@@ -136,16 +136,18 @@ p {
     background-image: url(./assets/image-2.jpg);
     width: 50%;
     float: right;
-    height: 70vh;
+    height: 480px;
     background-position: 57% 10%;
+    background-repeat: no-repeat;
 }
 
 .mission-background {
     background-image: url(./assets/image-7.jpg);
     width: 50%;
     float: left;
-    height: 70vh;
+    height: 480px;
     background-position: 0% 80%;
+    background-repeat: no-repeat;
 }
 
 .mobile-mission-background {
@@ -354,11 +356,49 @@ footer p {
 
 /* Media Queries start here */
 
-@media (max-width: ){
+@media (max-width: 1276px){
+    .about-text p,
+    .mission-text p,
+    .alissa-text p {
+        font-size: 18px;
+    }
 
-
-
+    .mission-background {
+    background-image: url(./assets/image-7.jpg);
+    background-position: 22% 16%;
+    height: 420px;
 }
+
+    .about-background {
+        height: 420px;
+    }
+    .about-text,
+    .mission-text {
+        margin-left: 10%;
+        margin-top: 3%;
+    }
+}
+
+@media (max-width: 1155px){
+    .about-text p,
+    .mission-text p,
+    .alissa-text p {
+        font-size: 16px;
+    }
+
+    .about-text,
+    .mission-text {
+        margin-left: 10%;
+        margin-top: 0%;
+    }
+    
+    .mission-background,
+    .about-background {
+        height: 350px;
+    } 
+}
+
+@media (max-width: 1048px)
 
 
 
