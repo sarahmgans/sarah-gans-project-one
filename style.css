@@ -23,7 +23,7 @@ img {
 .wrapper {
     margin: 0 auto;
     max-width: 1280px;
-    width: 80%;
+    width: 90%;
 }
 
 body {
@@ -126,17 +126,17 @@ p {
 
 .about-text,
 .mission-text {
-    width: 30%;
+    width: 40%;
     float: left;
-    margin-left: 10%;
-    margin-top: 5%;
+    margin-left: 5%;
+    margin-top: 3%;
 }
 
 .about-background {
     background-image: url(./assets/image-2.jpg);
     width: 50%;
     float: right;
-    height: 480px;
+    height: 420px;
     background-position: 57% 10%;
     background-repeat: no-repeat;
 }
@@ -145,7 +145,7 @@ p {
     background-image: url(./assets/image-7.jpg);
     width: 50%;
     float: left;
-    height: 480px;
+    height: 420px;
     background-position: 0% 80%;
     background-repeat: no-repeat;
 }
@@ -356,49 +356,7 @@ footer p {
 
 /* Media Queries start here */
 
-@media (max-width: 1276px){
-    .about-text p,
-    .mission-text p,
-    .alissa-text p {
-        font-size: 18px;
-    }
-
-    .mission-background {
-    background-image: url(./assets/image-7.jpg);
-    background-position: 22% 16%;
-    height: 420px;
-}
-
-    .about-background {
-        height: 420px;
-    }
-    .about-text,
-    .mission-text {
-        margin-left: 10%;
-        margin-top: 3%;
-    }
-}
-
-@media (max-width: 1155px){
-    .about-text p,
-    .mission-text p,
-    .alissa-text p {
-        font-size: 16px;
-    }
-
-    .about-text,
-    .mission-text {
-        margin-left: 10%;
-        margin-top: 0%;
-    }
-    
-    .mission-background,
-    .about-background {
-        height: 350px;
-    } 
-}
-
-@media (max-width: 1048px)
+header {
 
 
 
