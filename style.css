@@ -148,9 +148,9 @@ p {
     background-repeat: no-repeat;
 }
 
-.mobile-mission-background {
+.mobile-about-background {
     display: hidden;
-    background-image: url(./assets/image-7.jpg);
+    background-image: url(./assets/image-2.jpg);
 }
 
 .button {
@@ -415,6 +415,10 @@ footer p {
         margin-top: 160px;
     }
 
+    .icons-bottom p {
+        font-size: 22px;
+    }
+
     .instagram h2 {
         margin-top: 50px;
         margin-bottom: 50px;
@@ -513,8 +517,8 @@ footer p {
     }
 
     .about-text,
-    
-    .mission-text {
+    .mission-text,
+    .mission-background {
         float: none;
     }
 
@@ -525,25 +529,27 @@ footer p {
         text-align: center;
     }
 
-    .mission-background {
+    .mobile-about-background {
+        display: inline-block;
+        height: 330px;
+        background-repeat: no-repeat;
+    }
+
+    .about-background {
         display: none;
     }
 
-    .mobile-mission-background {
-        display: inline-block;
-        height: 330px;
-    }
-
-    .about-background,
-    .mobile-mission-background {
+    .mission-background,
+    .mobile-about-background {
         width: 100%;
+        background-size: cover;
     }
 
     .button {
         margin: 0 auto;
     }
 
-    .mobile-mission-background {
+    .mobile-about-background {
         background-position: 0% 15%;
     }
 
@@ -556,6 +562,7 @@ footer p {
     .alissa-text {
         float: none;
         margin: 0 auto;
+        width: 100%;
     }
 
     .alissa-text h2 {
@@ -586,8 +593,8 @@ footer p {
 
     .insta .missing, 
     .insta .image-3 {
-        width: calc(50% - 20px);
-        margin: 10px;   
+        width: calc(50% - 10px);
+        margin: 5px;   
     }
 
     .footer {
@@ -618,7 +625,7 @@ footer p {
     input[type="text"],
     input[type="submit"] {
         display: block;
-        width: 100%;
+        width: 80%;
         margin: 0 auto;
         margin-bottom: 10px;
     }
@@ -626,10 +633,42 @@ footer p {
     .footer p {
         line-height: 15px;
     }
+}
 
+@media (max-width: 599px) {
+    h1 {
+        font-size: 84px;
+    }
+    .mobile-about-background,
+    .mission-background {
+        height: 200px;
+    }
+}
 
+@media (max-width: 444px) {
+    h1 {
+        font-size: 70px;
+    }
+}
 
+@media (max-width: 375px) {
+    
+    h1 {
+        font-size: 65px;
+    }
 
+    .bottom-nav {
+        padding: 0;
+    }
+
+    .bottom-nav li {
+        padding: 0 10px;
+    }
+
+    input[type="text"],
+    input[type="submit"] {
+        width: 100%;
+    }
 }
 
 
