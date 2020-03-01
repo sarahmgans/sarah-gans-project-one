@@ -20,10 +20,18 @@ img {
     line-height: 0;
 }
 
-.wrapper {
+.wrapper,
+.large-wrapper {
     margin: 0 auto;
+}
+
+.wrapper {
     max-width: 1280px;
     width: 90%;
+}
+
+.large-wrapper {
+    max-width: 1800px;
 }
 
 body {
@@ -65,8 +73,13 @@ nav li {
 }
 
 nav li a {
-    text-decoration: none;
+    text-decoration-color: transparent;
     color: white;
+    transition: 0.3s;
+}
+
+nav li a:hover {
+    text-decoration-color: white;
 }
 
 .hamburger-menu {
@@ -126,22 +139,24 @@ p {
     margin-top: 2%;
 }
 
+.about-background,
+.mission-background {
+    width: 50%;
+    height: 420px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .about-background {
     background-image: url(./assets/image-2.jpg);
-    width: 50%;
     float: right;
-    height: 420px;
     background-position: 57% 10%;
-    background-repeat: no-repeat;
 }
 
 .mission-background {
     background-image: url(./assets/image-7.jpg);
-    width: 50%;
     float: left;
-    height: 420px;
     background-position: 0% 80%;
-    background-repeat: no-repeat;
 }
 
 .mobile-about-background {
@@ -164,6 +179,11 @@ p {
 .button a {
     text-decoration: none;
     color: #F2A11C;
+    transition: 0.3s;
+}
+
+.button a:hover {
+    color: white;
 }
 /* About us/Our Mission sections end here */
 
@@ -284,9 +304,11 @@ h3 {
 
 .address p,
 .form p {
+    font-family: 'Catamaran';
     color: white;
     margin-bottom: 5px;
     line-height: 8px;
+    font-style: normal;
 }
 
 .search-bar {

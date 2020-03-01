@@ -10,7 +10,7 @@
 </head>
 <body>
     <header>
-        
+
         <div class="wrapper">
             <nav class="top-nav">
                 <ul>
@@ -29,7 +29,7 @@
                     <i class="fab fa-instagram" aria-hidden="true"></i>
                     <span class="sr-only">Instagram</span>
                     <i class="fab fa-facebook-f" aria-hidden="true"></i>
-                    <span class="sr-only"> Facebook</span>
+                    <span class="sr-only">Facebook</span>
                     <i class="fab fa-snapchat-ghost" aria-hidden="true"></i>
                     <span class="sr-only">Snapchat</span>
                     <i class="fab fa-twitter" aria-hidden="true"></i><span class="sr-only">Twitter</span>
@@ -38,7 +38,7 @@
         </div>
     </header>
     <main>
-        <section class="about clearfix">
+        <section class="about clearfix large-wrapper">
             <div class="mobile-about-background"></div>
             <div class="about-text">
                 <h2>About us</h2>
@@ -49,7 +49,7 @@
             </div>
             <div class="about-background"></div>
         </section>
-        <section class="mission clearfix">
+        <section class="mission clearfix large-wrapper">
             <div class="mission-background"></div>
             <div class="mission-text">
                 <h2>Our Mission</h2>
@@ -78,6 +78,7 @@
         <section class="icons-bottom">
             <div class="clearfix wrapper three-icons-together">
                 <div class="products">
+                    <!-- I didn't feel like aria labels were necessary here, as the meaning of the icons is made clear by the text that proceeds each of them -->
                     <i class="fas fa-bicycle" aria-hidden="true"></i>
                     <p>Products</p>
                 </div>
@@ -116,12 +117,12 @@
                     </ul>
                 </nav>
                 <div class="bottom-contact clearfix">
-                    <div class="address">
+                    <address class="address">
                         <h3>Contact</h3>
                         <p>info@email.com | 123 - 456 - 7890</p>
                         <p>123 some road, Toronto, ON</p>
                         <p>A5A 5A5, Canada</p>
-                    </div>
+                    </address>
                     <form action="#" class="form">
                         <label for="email">
                             <h3>Stay Updated</h3>
@@ -130,8 +131,8 @@
                         <div class="search-bar">
                             <input type="text" placeholder="email address" id="search-input" class="email">
                             <input type="submit" value="subscribe" class="subscribe">
+                        </div>    
                     </form>
-                    </div>
                 </div>
             </div>
         </section>
