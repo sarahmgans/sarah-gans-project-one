@@ -8,7 +8,7 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
 
 .sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
 
-/* General Styling */
+/* General Styles */
 
  html {
     font-size: 62.5%;
@@ -27,9 +27,6 @@ img {
 }
 
 body {
-    font-family: 'Catamaran';
-    color: black;
-    font-weight: regular;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -40,9 +37,7 @@ header {
     background-image: url(./assets/image-1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: 0% 99%;
     height: 100vh;
-    min-height: 400px;
     padding: 20px 0 0 0;
     position: relative;
 }
@@ -110,6 +105,7 @@ h1 {
 
 /* Main starts here */
 
+/* About us/Our Mission sections start here */
 h2 {
     font-family: 'Pacifico';
     font-size: 42px;
@@ -169,7 +165,9 @@ p {
     text-decoration: none;
     color: #F2A11C;
 }
+/* About us/Our Mission sections end here */
 
+/* Meet Alissa section starts here*/
 .meet-alissa {
     padding-top: 90px;
     padding-bottom: 90px;
@@ -191,7 +189,9 @@ p {
     float: left;
     margin-left: 4%;
 }
+/* Meet Alissa section ends here */
 
+/* Icons section starts here */
 .icons-bottom {
     background-image: url(./assets/image-5.jpg);
     background-size: cover;
@@ -226,7 +226,9 @@ p {
     margin-top: 200px;
     padding: 0 25px;
 }
+/* Icons section ends here */
 
+/* Instagram section starts here */
 .instagram h2 {
     text-align: center;
     margin-top: 100px;
@@ -255,7 +257,11 @@ p {
 .insta.clearfix {
     padding-bottom: 125px;
 }
+/* Instagram section ends here */
 
+/* Main ends here */
+
+/* Footer starts here*/
 .footer {
     background-color: #1F2022;
     padding-top: 80px;
@@ -330,10 +336,6 @@ input[type="submit"]:focus {
     float: left;
 }
 
-/* Main ends here */
-
-/* Footer starts here */
-
 .copyright {
     background-color: black;
     clear: both;
@@ -346,7 +348,6 @@ footer p {
     font-size: 15px;
     padding: 7px;
 }
-
 /* Footer ends here */
 
 /* Media Queries start here */
@@ -360,6 +361,10 @@ footer p {
     h1 {
         margin-top: 200px;
         font-size: 120px;
+    }
+
+    .icons-bottom {
+        background-position: 50% 0%;
     }
 } 
 
@@ -407,6 +412,7 @@ footer p {
 
     .icons-bottom {
         height: 400px;
+        background-position: 50% 0%;
     }
     
     .icons-bottom .products,
@@ -527,16 +533,17 @@ footer p {
         width: 90%;
         margin-bottom: 40px;
         text-align: center;
+        line-height: 25px;
+    }
+
+    .about-background {
+        display: none;
     }
 
     .mobile-about-background {
         display: inline-block;
         height: 330px;
         background-repeat: no-repeat;
-    }
-
-    .about-background {
-        display: none;
     }
 
     .mission-background,
@@ -572,6 +579,11 @@ footer p {
 
     .icons-bottom {
         height: 460px;
+        background-position: 71% 0%;
+    }
+
+    .three-icons-together {
+        padding-top: 26px;
     }
     
     .icons-bottom .products, 
@@ -579,7 +591,7 @@ footer p {
     .icons-bottom .reach-out {
         margin-top: 0;
         display: block;
-        padding-top: 39px;
+        padding-top: 22px;
     }
 
     .instagram h2 {
@@ -629,16 +641,18 @@ footer p {
         margin: 0 auto;
         margin-bottom: 10px;
     }
-
-    .footer p {
-        line-height: 15px;
-    }
 }
 
 @media (max-width: 599px) {
     h1 {
         font-size: 84px;
+        margin-top: 170px;
     }
+
+    .fa.fa-bars {
+        top: -160px;
+    }
+
     .mobile-about-background,
     .mission-background {
         height: 200px;
@@ -648,11 +662,16 @@ footer p {
 @media (max-width: 444px) {
     h1 {
         font-size: 70px;
+        margin-top: 185px;
     }
+
+    .fa.fa-bars {
+        top: -175px;
+    }
+
 }
 
 @media (max-width: 375px) {
-    
     h1 {
         font-size: 65px;
     }
