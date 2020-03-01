@@ -76,7 +76,7 @@ nav li a {
 .fa.fa-bars {
     position: absolute;
     color: white;
-    visibility: hidden;
+    display: none;
 }
 
 h1 {
@@ -145,7 +145,7 @@ p {
 }
 
 .mobile-about-background {
-    display: hidden;
+    display: none;
     background-image: url(./assets/image-2.jpg);
 }
 
@@ -512,7 +512,7 @@ footer p {
     }
 
     .fa.fa-bars {
-        visibility: visible;
+        display: block;
         right: 0px;
         top: -135px;
         font-size: 30px;
@@ -644,6 +644,10 @@ footer p {
 }
 
 @media (max-width: 599px) {
+    header {
+        background-position: 29% 0%;
+    }
+    
     h1 {
         font-size: 84px;
         margin-top: 170px;
@@ -672,6 +676,10 @@ footer p {
 }
 
 @media (max-width: 375px) {
+    header {
+        background-position: 28% 0%;
+    }
+    
     h1 {
         font-size: 65px;
     }
