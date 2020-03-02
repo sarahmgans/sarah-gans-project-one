@@ -78,7 +78,8 @@ nav li a {
     transition: 0.3s;
 }
 
-nav li a:hover {
+nav li a:hover,
+nav li a:focus-within {
     text-decoration-color: white;
 }
 
@@ -150,7 +151,7 @@ p {
 .about-background {
     background-image: url(./assets/image-2.jpg);
     float: right;
-    background-position: 57% 10%;
+    background-position: 80% 0%;
 }
 
 .mission-background {
@@ -182,7 +183,8 @@ p {
     transition: 0.3s;
 }
 
-.button a:hover {
+.button a:hover,
+.button a:focus-within {
     color: white;
 }
 /* About us/Our Mission sections end here */
@@ -300,6 +302,7 @@ h3 {
     color: #F2A11C;
     font-family: 'Pacifico';
     font-size: 25px;
+    font-style: normal;
 }
 
 .address p,
@@ -323,16 +326,17 @@ input {
 input[type="text"] {
     font-family: 'Catamaran';
     margin-right: -4.2px;
-    padding: 12px 30px;
+    padding: 12px 20px;
     background: white;
     color: black;
     border: none;
     width: 60%;
     font-size: 15px;
+    text-align: left;
 }
 
 input[type="text"]:hover,
-input[type="text"]:focus {
+input[type="text"]:focus-within {
     background-color:white;
     color:  #0f2128;
 }
@@ -340,15 +344,16 @@ input[type="text"]:focus {
 input[type="submit"] {
     font-family: 'Catamaran';
     background-color: #F2A11C;
+    font-weight: bold;
     color: #0f2128;
     border: none;
     text-transform: uppercase;
     font-size: 15px;
-    padding: 12px 30px;
+    padding: 12px 20px;
 }
 
 input[type="submit"]:hover,
-input[type="submit"]:focus {
+input[type="submit"]:focus-within {
     color: white;
 }
 
@@ -524,7 +529,7 @@ footer p {
     .icons-bottom .products,
     .icons-bottom .community,
     .icons-bottom .reach-out {
-    margin-top: 150px;
+        margin-top: 150px;
     }
 }
 
@@ -616,6 +621,10 @@ footer p {
         padding-top: 22px;
     }
 
+    .insta.clearfix {
+        padding-bottom: 40px;
+    }
+
     .instagram h2 {
         margin-top: 40px;
         margin-bottom: 40px;
@@ -628,11 +637,11 @@ footer p {
     .insta .missing, 
     .insta .image-3 {
         width: calc(50% - 10px);
-        margin: 5px;   
+        margin: 0px 5px 0px 5px;   
     }
 
     .footer {
-        padding-top: 40px;
+        padding-top: 35px;
         padding-bottom: 15px;
     }
 
@@ -654,6 +663,10 @@ footer p {
 
     .form > label:nth-child(1) > h3:nth-child(1) {
         margin-top: 40px;
+    }
+
+    input[type="text"] {
+        text-align: center;
     }
 
     input[type="text"],
@@ -694,7 +707,6 @@ footer p {
     .fa.fa-bars {
         top: -175px;
     }
-
 }
 
 @media (max-width: 375px) {
@@ -719,6 +731,10 @@ footer p {
         width: 100%;
     }
 }
+
+/* Media Queries end here */
+
+/* DONE */
 
 
 
