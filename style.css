@@ -90,7 +90,7 @@ nav li a:focus-within {
 
 .fa.fa-bars,
 .fas.fa-times {
-    position: absolute;
+    position: fixed;
     color: white;
 }
 
@@ -544,46 +544,72 @@ footer p {
         visibility: visible;
     }
 
-    .navVisible {
-        visibility: visible;
-        right: 0;
-        top: 0;
-        position: fixed;
-    }
-
     .hamburger-menu nav {
         visibility: hidden;
         position: fixed;
-        background-color: white;
+        background-color: black;
         transition: all 0.3s ease;
         z-index: 3;
         border-radius: 1px;
         top: 0;
         right: -225px;
         width: 225px;
-        border-bottom: 1px solid rgba(73, 71, 71, 0.3);
+        border-bottom: 1px solid white;
+        border-left: 1px solid white;
     }
 
-    .hamburger-menu nav ul a, 
-    .hamburger-menu nav ul i {
+    .hamburger-menu .navVisible {
+        visibility: visible;
+        right: 0;
+        top: 0;
+        position: fixed;
+    }
+
+    .hamburger-menu nav ul a {
         margin-left: 0;
         margin-right: 0;
+        transition: 0.3s;
     }
 
+    .hamburger-menu nav li a:hover,
+    .hamburger-menu nav li a:focus-within {
+    font-weight: bold;
+    text-decoration-color: transparent;
+}
     .hamburger-menu ul {
         display: flex;
         flex-direction: column;
-        margin-top: 70px;
+        margin-top: 69px;
         margin-bottom: 0px;
         padding-left: 17px;
         padding-right: 17px;
     }
 
+    .fa.fa-bars {
+        font-size: 26px;
+    }
+
     .fa.fa-bars,
     .fas.fa-times {
-        right: -10px;
-        top: -135px;
+        right: 16px;
+        top: 20px;
+        text-shadow: 0px 0px 1px black, 0px 0px 1px black, 0px 0px 1px black;
+        z-index: 1000;
+    }
+
+    .fas.fa-times {
         font-size: 30px;
+    }
+
+    .hamburger-menu ul li {
+        padding-bottom: 8px;
+        border-top: 1px solid white;
+        padding-top: 8px;
+        text-align: left;
+    }
+
+    .hamburger-menu nav li {
+        padding-left: 0;
     }
 
     h1 {
@@ -729,10 +755,6 @@ footer p {
         margin-top: 170px;
     }
 
-    .fa.fa-bars {
-        top: -160px;
-    }
-
     .mobile-about-background,
     .mission-background {
         height: 200px;
@@ -743,10 +765,6 @@ footer p {
     h1 {
         font-size: 70px;
         margin-top: 185px;
-    }
-
-    .fa.fa-bars {
-        top: -175px;
     }
 }
 
