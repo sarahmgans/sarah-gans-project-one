@@ -14,11 +14,29 @@ $(document).ready(function () {
         }
     })
 
-    const scroll = function (scrollTo) {
+    const scroll = function(scrollTo){
         $('html, body').animate({
             scrollTop: $(scrollTo).offset().top
         }, 800);
     }
+
+// TRY #1
+
+//     const clicker = function(clicked){
+//         $(clicked).on('click', function (e) {
+//             e.preventDefault();
+//     })
+// }
+
+    // clicker('a.about')
+    // scroll('#about')
+
+    // TRY #2 
+
+    // $('a.about, a.blog, a.contact, a.home').on('click', function(e){
+    //     e.preventDefault();
+    //     scroll('#' + $(this).attr('id'))
+    // })
 
     $('a.about').on('click', function(e){
         e.preventDefault();
@@ -33,5 +51,10 @@ $(document).ready(function () {
     $('a.contact').on('click', function(e){
         e.preventDefault();
         scroll('#contact') 
+    })
+
+    $('a.home').on('click', function (e) {
+        e.preventDefault();
+        scroll('#home') 
     })
 });

@@ -574,6 +574,7 @@ footer p {
     .hamburger-menu nav li a:hover,
     .hamburger-menu nav li a:focus-within {
     font-weight: bold;
+    color: #F2A11C;
     text-decoration-color: transparent;
 }
     .hamburger-menu ul {
