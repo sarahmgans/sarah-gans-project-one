@@ -14,4 +14,24 @@ $(document).ready(function () {
         }
     })
 
+    const scroll = function (scrollTo) {
+        $('html, body').animate({
+            scrollTop: $(scrollTo).offset().top
+        }, 800);
+    }
+
+    $('a.about').on('click', function(e){
+        e.preventDefault();
+        scroll('#about')
+    })
+
+    $('a.blog').on('click', function(e){
+        e.preventDefault();
+        scroll('#blog')
+    })
+
+    $('a.contact').on('click', function(e){
+        e.preventDefault();
+        scroll('#contact') 
+    })
 });
